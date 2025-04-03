@@ -1,13 +1,16 @@
-# [![Build Status](https://travis-ci.org/joscha/play-easymail.png?branch=master)](https://travis-ci.org/joscha/play-easymail) play-easymail - an extension to the Typesafe mailer plugin for Play! Framework 2.x (Java)
+play-easymail - an extension to the Typesafe mailer plugin for Play! Framework 2.x (Java)
+      
+Forked from `joscha/play-easymail`
 
 This plugin uses concepts from [Play20StartApp][] to make sending emails (text, html, mixed) easier. A sample is included.
 
 #### Version information
 **play-easymail currently needs Play! Framework 2.x**
 
-play-easymail is cross-tested with Java 1.6, Java 1.7 (Up to `0.6.x`) and Java 1.8 (from `0.7.0`)
+play-easymail is cross-tested with Java 1.6, Java 1.7 (Up to `0.6.x`), Java 1.8 (from `0.7.0`), Java 11 (from `2.8.0`)
 
-* The `master` branch contains the code for Play! Framework 2.6.x (play-easymail version `0.9.0` and up).
+* The `master` branch contains the code for Play! Framework 2.8.x (play-easymail version `2.8.0` and up).
+* The `2.8.x` branch contains the code for 2.8.x (play-easymail version `2.8 - 2.8.x`).
 * The `2.5.x` branch contains the code for 2.5.x (play-easymail version `0.8 - 0.8.x`).
 * The `2.4.x` branch contains the code for 2.4.x (play-easymail version `0.7 - 0.7.x`).
 * The `2.3.x` branch contains the code for 2.3.x (play-easymail version `0.6 - 0.6.x`).
@@ -29,6 +32,9 @@ Mailer.getDefaultMailer().sendMail(
 You can also have a look at the [sample](samples/play-easymail-usage/app/controllers/Application.java) for a more advanced use-case (content from templates and setting custom headers).
 
 ## Versions
+* **2.8.0** [2025]
+  * support for play 2.8.x
+  * package renaming from com.feth to com.jbaysolutions
 * **0.9.4** [2017-11-04]
   * new play mailer library
 * **0.9.3** [2017-07-12]
