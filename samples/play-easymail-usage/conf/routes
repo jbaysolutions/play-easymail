@@ -3,5 +3,5 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.HomeController.index
-POST    /                           controllers.HomeController.sendMail
+GET     /                           controllers.HomeController.index(request: Request)
+POST    /                           controllers.HomeController.sendMail(request: Request)

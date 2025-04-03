@@ -1,14 +1,15 @@
-@(f: Form[HomeController.MailMe])
+@(f: Form[HomeController.MailMe], csrfToken: play.filters.csrf.CSRF.Token, request: Http.Request)(implicit messagesProvider: MessagesProvider)
 
 @import helper._
 
-@main("Welcome to Play 2.4") {
-    
+@main("Welcome to Play 2.8", request) {
+
     @form(routes.HomeController.sendMail) {
+		<input type="hidden" name="@csrfToken.name" value="@csrfToken.value">
     	@inputText(
     		f("email")
     	)
-    	
+
     	<input type="submit" value="OK">
     }
 }

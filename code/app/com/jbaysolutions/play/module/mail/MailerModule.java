@@ -1,4 +1,4 @@
-package com.feth.play.module.mail;
+package com.jbaysolutions.play.module.mail;
 
 import play.api.Configuration;
 import play.api.Environment;

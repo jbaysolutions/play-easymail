@@ -1,8 +1,7 @@
-package com.feth.play.module.mail;
-
-import com.feth.play.module.mail.Mailer.Mail;
+package com.jbaysolutions.play.module.mail;
 
 import akka.actor.Cancellable;
+import com.jbaysolutions.play.module.mail.Mailer.Mail;
 
 public interface IMailer {
 	public Cancellable sendMail(final Mail email);

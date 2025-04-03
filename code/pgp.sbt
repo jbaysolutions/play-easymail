@@ -1,3 +1,4 @@
+/*
 useGpg := true
 
 // the following lines are being ignored as long as we use the GPG binary
@@ -11,3 +12,4 @@ pgpPassphrase := {
   else
     Some(Array())
 }
+*/

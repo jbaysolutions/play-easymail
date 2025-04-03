@@ -1,10 +1,10 @@
 package modules;
 
-import com.feth.play.module.mail.IMailer;
-import com.feth.play.module.mail.Mailer;
-import com.feth.play.module.mail.Mailer.MailerFactory;
 import com.google.inject.AbstractModule;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
+import com.jbaysolutions.play.module.mail.IMailer;
+import com.jbaysolutions.play.module.mail.Mailer;
+import com.jbaysolutions.play.module.mail.Mailer.MailerFactory;
 
 public class CustomMailerBinder extends AbstractModule {
 

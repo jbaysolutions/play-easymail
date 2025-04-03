@@ -1,4 +1,4 @@
-package com.feth.play.module.mail;
+package com.jbaysolutions.play.module.mail;
 
 import akka.actor.ActorSystem;
 import akka.actor.Cancellable;

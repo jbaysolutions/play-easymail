@@ -1,4 +1,4 @@
-@(title: String)(content: play.twirl.api.Html)
+@(title: String, request: Http.Request)(content: play.twirl.api.Html)
 
 <!DOCTYPE html>
 
@@ -7,8 +7,8 @@
         <title>@title</title>
     </head>
     <body>
-        @if(flash().contains("message")) {
-          <p style="color: green;">@flash().get("message")</p>
+        @if(request.flash().get("message").isPresent) {
+          <p style="color: green;">@request.flash().get("message")</p>
         }
         @content
     </body>
